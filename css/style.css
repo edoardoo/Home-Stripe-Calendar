@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+.box_transition {
+   -webkit-transition: all 0.7s ease-in-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+   transition: all 0.7s ease-in-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.hidden{
+     opacity: 0;
+}
+
+.calendarWrapper{
+   margin: auto;
+   max-width: 1180px;
+   overflow: hidden;
+   clear: left;
+}
+.calendarWrapper > *{
+   float: left;
+}
+
+.calendarArrow{
+   line-height: 130px !important;
+    width: 3%;
+}
+
+#calendarPlugin .row{
+   display: block;
+   width: 100%;
+   overflow: hidden;
+}
+
+#calendarPlugin .col{
+   float: left;
+   margin: 0;
+}
+
+#calendarPlugin .col50{
+   width: 50% ;
+}
+#calendarPlugin .col40{
+   width: 40% ;
+}
+
+.container{
+   /*background: pink;*/
+   overflow: visible;
+}
+.hContainer{
+   overflow: hidden;
+   width: 94%;
+}
+
+#calendarPlugin{
+   white-space: nowrap;
+   width: auto;
+   max-width: 1100px;
+   position: relative;
+    margin-left: 0;
+}
+.calendarEvent{
+
+   /*background: yellow;*/
+   list-style: none;
+   width: 20%;
+   box-sizing: border-box;
+   padding: 10px;
+   display: inline-block;
+   white-space: wrap;
+   top: 0;
+   position: relative;
+   vertical-align: top;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.data{
+
+   font-family: "Fjalla One", sans-serif;
+}
+#calendarPlugin ul{
+   padding: 0;
+   position:relative;
+   margin: 0;
+}
+
+.eventDetail{
+   list-style: none;
+   padding-left: 5px;
+   white-space: normal;
+   top:0;
+
+   position: relative;
+   text-align: left;
+}
+.eventDetail:first-child{
+   padding-top: 10px;
+}
+
+
+.day, .month{
+   font-size: 1.7em;
+   text-transform: uppercase;
+   line-height: 1.35em;
+   letter-spacing: 0.2em;
+   color: #bbb !important;
+}
+.dayNumber{
+   font-size: 5.035714em;
+   line-height: 80px;
+   color: #063267 !important;
+
+}
+.disabled{
+   opacity: 0;
+}
+
+#pop_table  {
+    background: #dedede !important;
+    border: none !important;
+	margin-bottom: 15px;
+}
+
+#pop_table #dayevent div:nth-child(3){
+    color: #002170 !important;
+}
+
+.closeDetails{
+    padding: 10px;
+    background: #00608a;
+    color: white;
+}
+@media screen and (max-width: 1000px ) {
+
+    .calendarEvent{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px ) {
+
+    .calendarEvent{
+        width: 100%;
+    }
+}
